@@ -60,8 +60,12 @@ let package = Package(
 
     ],
     dependencies: [
-        .package(url: "https://github.com/ml-explore/mlx-swift.git", .upToNextMajor(from: "0.30.6")),
-        .package(url: "https://github.com/ml-explore/mlx-swift-lm.git", .upToNextMajor(from: "3.31.3")),
+        .package(
+            url: "https://github.com/arbutus-labs/mlx-swift.git",
+            revision: "74b9793105ba7fe798291a9f4596a7bab5437e3c"),
+        .package(
+            url: "https://github.com/arbutus-labs/mlx-swift-lm.git",
+            revision: "c5d5c12e663f42bda23ce9c6120b6af56a494ab7"),
         .package(url: "https://github.com/huggingface/swift-transformers.git", .upToNextMajor(from: "1.1.6")),
         .package(url: "https://github.com/huggingface/swift-huggingface.git", .upToNextMajor(from: "0.8.1"))
     ],
